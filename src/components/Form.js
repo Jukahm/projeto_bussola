@@ -23,11 +23,11 @@ export class Form extends React.Component {
     render() {
         return (
             <div>
-                <form id="form_consulta" className="filtros">
+                <form id="form_consulta" onSubmit={this.props.handleSubmit} className="filtros">
                     <div className="campo">
                         <input type="text" className="cmp_busca" ref="input_consulta" placeholder="Nome" />
                     </div>
-                    <input className="raised" type="button" onClick={this.handleButtonClick} value="Buscar" />
+                    <input className="raised" type="submit" onClick={this.handleButtonClick} value="Buscar" />
                     <input className="outlined" type="button" value="Limpar" />
                 </form>
             </div>
