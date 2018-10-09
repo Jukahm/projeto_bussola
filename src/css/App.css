@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+*{
+    line-height:1;
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+    text-decoration:none;
+    outline:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family:'Roboto', sans-serif;
+}
+.App {
+    text-align: center;
+}
+
+.conteudo {
+    margin:20px;
+    text-align:left;
+    flex-grow:2;
+}
+.conteudo h2{
+    margin-bottom:20px;
+}
+
+.raised, .flat, .outlined{
+    text-transform:uppercase;
+    font-weight:500;
+    padding:8px 13px;
+    cursor:pointer;
+    font-size:13px;
+    letter-spacing:0.5px;
+}
+.raised, .outlined{
+    border-radius:2px;
+    border:2px solid #2A9190;
+}
+.raised{
+    background-color:#2A9190;
+    color:white;
+    margin:0 15px;
+}
+.raised:hover{
+    background-color:#397F7F;
+    border-color:#397F7F;
+}
+
+.campo {
+    margin:5px;
+    padding:10px 5px;
+}
+
+.cmp_busca {
+    min-width:300px;
+}
+
+.filtros{
+    display:flex;
+    flex-direction:row;
+    margin:-5px;
+    align-items:center;
+    padding-bottom:10px;
+}
+
+input[type=text], input[type=password], textarea{
+    padding:5px;
+    margin:5px;
+}
+input[type=text], input[type=password]{
+    border-bottom:1px solid #666;
+}
+
+header {
+    padding:10px 20px;
+    color:black;
+    border-bottom:1px solid #ccc;
+    text-align:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
