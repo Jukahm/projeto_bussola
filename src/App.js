@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import {Form} from './components/Form';
-import {Header} from './components/Header';
+import { BrowserRouter, Route } from 'react-router-dom'
+import { Busca } from './components/Busca';
+import { Home } from './components/Home';
+import { Header } from './components/Header';
 import './css/App.css';
 
 class App extends Component {
+  
+
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <div className="conteudo">
-          <h2>Buscar artista</h2>
-          <Form/>
-        </div>
+      <div className="container">
+        <Header />
+        <BrowserRouter>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/busca' component={Busca} />
+        </BrowserRouter>
       </div>
     );
   }

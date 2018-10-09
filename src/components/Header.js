@@ -4,9 +4,7 @@ import logo from '../img/spot_icon.png';
 export const Header = () => {
     return(
         <header>
-            <div>
-                <img src={logo}/>
-            </div>
+            <img src={logo}/>
         </header>
     );
 };
