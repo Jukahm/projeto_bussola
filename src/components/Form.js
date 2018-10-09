@@ -22,13 +22,13 @@ export class Form extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className = "formulario">
                 <form id="form_consulta" onSubmit={this.props.handleSubmit} className="filtros">
                     <div className="campo">
                         <input type="text" className="cmp_busca" ref="input_consulta" placeholder="Nome" />
+                        <input className="raised" type="submit" onClick={this.handleButtonClick} value="Buscar" />
                     </div>
-                    <input className="raised" type="submit" onClick={this.handleButtonClick} value="Buscar" />
-                    <input className="outlined" type="button" value="Limpar" />
+                    
                 </form>
             </div>
         )
