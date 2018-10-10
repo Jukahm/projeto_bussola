@@ -15,7 +15,6 @@ export class Table extends Component {
                 </thead>
                 <tbody>
                     {this.props.faixas.map((value, index) => {
-                        let chave = index;
                         return (
                             <tr key={index}>
                                 <td>{index + 1}</td>
