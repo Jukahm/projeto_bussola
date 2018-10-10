@@ -27,7 +27,6 @@ export class Busca extends Component {
             .then(response => response.json())
             .then(data => {
                     url = "https://api.spotify.com/v1/artists/" + data.artists.items[0].id + "/top-tracks?country=BR";
-                    console.log("EEIJSIS :" + this.state.id_artista);
                     fetch(url, {
                         method: 'get',
                         headers: {
